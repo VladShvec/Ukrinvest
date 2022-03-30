@@ -1,143 +1,238 @@
-header{
+header {
+    box-shadow: 0px -70px 115px 0px #8c8c8c;
     flex: 0 0 auto;
     height: 83px;
-    background-color: rgba(255,255,255,0.5);
+    background-color: grey;
     color: #0c1d27;
     //overflow-y: hidden;
     width: 100%;
     position: fixed;
     z-index: 10;
-    .header-container{
-        max-width: 1832px;
-        margin: 0 auto;
+
+    .header-container {
+
         padding: 4px 30px;
         display: flex;
         justify-content: space-between;
-            .logo{
-                width: 200px;
-                padding-top: 9px;
-                padding-left: 17px;
-                display: inline-block;
 
-                .logo-link{
-                    display: flex;
-                    color: #0c1d27;
-                    &:hover{
-                        text-decoration: none;
-                    }
-                    img{
-                        width: 43px;
-                        height: 50px;
-                        margin-right: 14px;
-                    }
-                }
-                .logo-text{
-                    font-size: 27.5px;
-                    padding: 13px 0;
-                    margin: 0;
-                    font-family: "Coco Gothic";
-                    font-weight: 400;
-                    color: #0d1e27;
-                    letter-spacing: -1px;
+        .logo {
+            width: 200px;
+            padding-top: 9px;
+            padding-left: 17px;
+            display: inline-block;
+
+            .logo-link {
+                display: flex;
+                color: #0c1d27;
+
+                &:hover {
+                    text-decoration: none;
                 }
 
+                img {
+                    width: 43px;
+                    height: 50px;
+                    margin-right: 14px;
+                }
             }
+
+            .logo-text {
+                font-size: 27.5px;
+                padding: 13px 0;
+                margin: 0;
+                font-family: "Coco Gothic";
+                font-weight: 400;
+                color: #0d1e27;
+                letter-spacing: -1px;
+                position: relative;
+                margin-left: 100px;
+
+                &:after {
+                    content: "";
+                    background-image: url(/img/logo.png);
+                    position: absolute;
+                    left: -70px;
+                    width: 50px;
+                    height: 60px;
+                    top: -6px;
+                }
+            }
+
+        }
     }
 }
-nav{
+
+nav {
     padding: 20px 0;
-    flex: 1 1 auto;
-    ul{
+    //flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+
+    .auth {
+        padding-left: 40px;
+
+        a {
+            color: #0c1e28;
+            font-size: 24.9px;
+            font-weight: 600;
+
+            &:hover {
+                color: #066043;
+            }
+        }
+    }
+
+    ul {
         list-style: none;
         display: flex;
         padding-left: 0;
         justify-content: flex-end;
-        li{
+
+        li {
             font-size: 18px;
             margin-right: 34.5px;
+            //margin-right: 50px;
 
-
-            a{
+            a {
 
                 color: #0c1e28;
                 font-size: 24.9px;
+                font-weight: 600;
+                text-transform: capitalize;
+
+                &:hover {
+                    text-decoration: none;
+                    color: #719060;
+                }
             }
-            &:last-child{
+
+            &:last-child {
                 margin-right: 4px;
             }
         }
+
+        .li-arm {
+            margin-right: 19px;
+        }
     }
 }
-.lang{
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    position: relative;
-    flex: 0 0 474px;
-    &:after{
-        content: "";
-        position: absolute;
-        display: inline-block;
-        width: 21px;
-        right: -8px;
-        top: 34px;
-        height: 44px;
-        background-image: url(/img/arrow-down.png);
-        background-repeat: no-repeat;
 
-    }
-    #lang-under{
+.lang {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    //position: relative;
+    //flex: 0 0 236px;
+
+    #lang-under {
         position: absolute;
-        right: 19px;
+
         top: 6px;
-        height: 59px;
+
         //animation-name: height;
         animation-duration: 1s;
         //animation-direction: alternate-reverse;
         animation-fill-mode: forwards;
-    }
-    @keyframes height {
-        0%{
-            height: 49px;
-        }50% {
-           height: 100px;
+
+        &:after {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            width: 21px;
+            right: -25px;
+            top: 27px;
+            height: 44px;
+            background-image: url(/img/arrow-down.png);
+            background-repeat: no-repeat;
+
         }
-        100%{
+
+        &:hover {
+            height: 163px;
+            background-color: #a09696;
+            padding: 0 4px;
+            border-radius: 18px 18px 18px 18px;
+
+            #ru {
+                display: block;
+
+            }
+
+            #arm {
+                display: block;
+            }
+        }
+
+        button {
+            &:hover {
+                background-color: #69b040;;
+
+            }
+        }
+
+        button a {
+            color: #0c1e28;
+            text-decoration: none;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+
+    @keyframes height {
+        0% {
+            height: 49px;
+        }
+        50% {
+            height: 100px;
+        }
+        100% {
             height: 150px;
         }
     }
     @keyframes back {
-        0%{
+        0% {
             height: 150px;
-        }50% {
-             height: 100px;
-         }
-        100%{
+        }
+        50% {
+            height: 100px;
+        }
+        100% {
             height: 49px;
         }
     }
-    button{
+
+    button {
         border-radius: 19px 19px 19px 19px;
         width: 63px;
         margin-top: 11px;
         color: #0b1d27;
+        padding-top: 4px;
         border-color: #0b1d27;
-        font-size: 24px;
-        font-family: 'Coco Gothic';
+        font-size: 23px;
+        font-family: "Coco Gothic";
         font-weight: 500;
-        &:hover{
+        outline: none;
+        border: 0.5px solid grey;
+
+        &:hover {
             cursor: pointer;
+
         }
     }
-    #ru{
+
+    #ru {
         display: none;
     }
-    #arm{
+
+    #arm {
         display: none;
 
     }
 }
-.burger{
+
+.burger {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -147,7 +242,8 @@ nav{
     display: none;
 
 }
-.burger span, .burger span:before, .burger span:after{
+
+.burger span, .burger span:before, .burger span:after {
     width: 100%;
     position: absolute;
     height: 5px;
@@ -156,37 +252,44 @@ nav{
     transition: .3s;
     border-radius: 5px;
 }
-.burger span:before{
+
+.burger span:before {
     content: "";
     top: -10px;
     transition: top 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
-.burger span{
+
+.burger span {
     top: 20px;
 }
-.burger span:after{
+
+.burger span:after {
     content: "";
     bottom: -10px;
     transition: bottom 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
-.burger span.active:before{
+
+.burger span.active:before {
     content: "";
     top: 0px;
     background-color: white;
     transform: rotate(45deg);
     transition: top 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.burger span.active:after{
+
+.burger span.active:after {
     content: "";
     background-color: white;
     bottom: 0;
     transform: rotate(-45deg);
     transition: bottom 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.burger span.active{
+
+.burger span.active {
     background: rgba(255, 255, 255, 0);
 }
-.menu{
+
+.menu {
     width: 300px;
     height: auto;
     background: #518d69;
@@ -198,10 +301,23 @@ nav{
     transition: right 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
     display: none;
 }
-.menu.active{
+
+.menu.active {
     display: inline-block;
+
+    li #lang-under2 {
+        #ru {
+            display: inline-block;
+        }
+
+        #arm {
+            display: inline-block;
+        }
+
+    }
 }
-.menu.animate{
+
+.menu.animate {
     left: 0;
 }
 

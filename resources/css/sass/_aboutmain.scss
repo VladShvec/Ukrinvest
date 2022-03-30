@@ -1,0 +1,21 @@
+.about-main {
+    height: 100vh;
+    background-image: url(/img/about-bg.jpg);
+    background-size: cover;
+    background-position: left center;
+
+    .about-container {
+        text-align: right;
+        position: absolute;
+        right: 3%;
+        top: 29%;
+
+        h1 {
+            text-align: center;
+            font-size: 106px;
+            width: 550px;
+            font-weight: 700;
+            color: white;
+        }
+    }
+}

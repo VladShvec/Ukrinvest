@@ -1,21 +1,50 @@
-html,body{
+html, body {
+    font-family: 'Aktiv Grotesk';
     height: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all .2s ease-in-out;
+    scroll-behavior: smooth;
 
 }
-.main-wrapper{
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.main-wrapper {
     display: flex;
     flex-direction: column;
-    height: 285%;
-    background-image: url('/img/Ukrinvest.jpg');
-    background-size: cover;
+    //background-image: url(/img/Ukrinvest_news.jpg);
+    //background-size: cover;
+    //background-position-y: -337px;
+    //
+    //display: flex;
+    //height: 330%;
+    //flex-direction: column;
+    //background-image: url(/img/Ukrinvest_news.jpg);
+    //background-size: cover;
+    //background-position: top center;
+
 }
+
 @import '_header.scss';
 @import '_main.scss';
 @import '_footer.scss';
-@import '_response.scss';
 @import '_slider.scss';
+@import '_ourmission.scss';
+@import '_services.scss';
+@import '_projects.scss';
+@import '_newspress.scss';
+@import '_form.scss';
+@import '_aboutmain.scss';
+@import "_news.scss";
+@import "_admin.scss";
 
 
+@import '_response.scss';

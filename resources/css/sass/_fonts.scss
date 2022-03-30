@@ -1,38 +1,28 @@
 @font-face {
-    font-family: 'Aktiv Grotesk regular';
-    src: url('/public/fonts/AktivGroteskCorp-Regular.eot');
-    src: url('/public/fonts/AktivGroteskCorp-Regular.eot?#iefix') format('embedded-opentype'),
-    url('/public/fonts/AktivGroteskCorp-Regular.woff2') format('woff2'),
-    url('/public/fonts/AktivGroteskCorp-Regular.woff') format('woff'),
-    url('/public/fonts/AktivGroteskCorp-Regular.ttf') format('truetype'),
-    url('/public/fonts/AktivGroteskCorp-Regular.svg#AktivGroteskCorp-Regular') format('svg');
+    font-family: 'Aktiv Grotesk';
+    src: url('/public/fonts/AktivGrotesk-Regular.woff2') format('woff2'),
+    url('/public/fonts/AktivGrotesk-Regular.woff') format('woff'),
+    url('/public/fonts/aktivGrotesk.otf') format('otf');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Coco Gothic';
-    src: url('/public/fonts/CocoGothic-Regular.eot');
-    src: url('/public/fonts/CocoGothic-Regular.eot?#iefix') format('embedded-opentype'),
-    url('/public/fonts/CocoGothic-Regular.woff2') format('woff2'),
-    url('/public/fonts/CocoGothic-Regular.woff') format('woff'),
-    url('/public/fonts/CocoGothic-Regular.ttf') format('truetype'),
-    url('/public/fonts/CocoGothic-Regular.svg#CocoGothic-Regular') format('svg');
+    font-family: 'NOH45_AM_0';
+    src: url('/public/fonts/NOH45_AM_0.woff2') format('woff2'),
+    url('/public/fonts/NOH45_AM_0.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Aktiv Grotesk bold';
-    src: url('/public/fonts/AktivGroteskCorp-Bold.eot');
-    src: url('/public/fonts/AktivGroteskCorp-Bold.eot?#iefix') format('embedded-opentype'),
-    url('/public/fonts/AktivGroteskCorp-Bold.woff2') format('woff2'),
-    url('/public/fonts/AktivGroteskCorp-Bold.woff') format('woff'),
-    url('/public/fonts/AktivGroteskCorp-Bold.ttf') format('truetype'),
-    url('/public/fonts/AktivGroteskCorp-Bold.svg#AktivGroteskCorp-Bold') format('svg');
-    font-weight: bold;
+    font-family: 'Raleway';
+    src: url('/public/fonts/Raleway-Medium.woff2') format('woff2'),
+    url('/public/fonts/Raleway-Medium.woff') format('woff');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
+

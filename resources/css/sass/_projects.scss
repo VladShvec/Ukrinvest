@@ -1,0 +1,168 @@
+.projects {
+    padding-top: 146px;
+    padding-bottom: 30px;
+
+    .projects-container {
+        max-width: 1361px;
+        margin: 0 auto;
+
+        .project-text-part {
+            text-align: center;
+            margin-bottom: 21px;
+
+            .projects-title {
+                font-size: 34px;
+                letter-spacing: 0.4px;
+                margin-bottom: 0;
+            }
+
+            .projects-text {
+                font-size: 23.6px;
+                letter-spacing: 0.1px;
+                margin-bottom: 0;
+            }
+
+
+        }
+
+    }
+}
+
+.project-slider {
+    position: relative;
+
+    .projects-item {
+        width: 342px !important;
+        height: 310px;
+        margin-right: 11px;
+        position: relative;
+        transition: 1s ease-in;
+
+        .project-item-text {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 31px 31px 0px 0px;
+            left: 19%;
+            width: 236px;
+            text-align: center;
+            margin: 0 auto;
+            top: 250px;
+            transition: 0.5s ease-in-out;
+
+            &:hover {
+                position: absolute;
+                text-align: center;
+                margin: 0 auto;
+                top: 40px;
+                left: 19%;
+                width: 236px;
+                padding: 24px 8px;
+                background-color: rgba(255, 255, 255, 0.85);
+                border-radius: 31px 31px 0px 0px;
+                cursor: pointer;
+
+                h3 {
+                    padding-top: 11px;
+                    padding-bottom: 16px;
+                }
+
+                p {
+                    display: block;
+                }
+            }
+
+            &:after {
+                content: "";
+                background-image: url(/img/dots.png);
+                background-position: center;
+                position: absolute;
+                width: 236px;
+                height: 24px;
+                left: 0%;
+                bottom: -25px;
+                background-color: white;
+                border-radius: 0 0 31px 31px;
+                background-repeat: no-repeat;
+                -webkit-box-shadow: 3px 0px 60px -1px rgb(0 0 0 / 20%);
+                -moz-box-shadow: 3px 0px 60px -1px rgb(0 0 0 / 20%);
+                box-shadow: 3px 0px 60px -1px rgb(0 0 0 / 20%);
+            }
+
+            h3 {
+                text-transform: uppercase;
+                font-size: 19px;
+                padding-top: 0;
+                padding-bottom: 0;
+
+            }
+
+            p {
+                display: none;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .slick-list {
+        overflow: hidden;
+    }
+
+    .slick-track {
+        display: flex;
+    }
+
+    .slick-arrow {
+        position: absolute;
+        top: 43.4%;
+        z-index: 10;
+        font-size: 0;
+        background-color: transparent;
+        border: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    /* Стрелка влево */
+    .slick-arrow.slick-prev {
+        background-image: url('/img/left-arr-slider.png');
+        position: absolute;
+        left: -48px;
+        background-size: contain;
+        width: 33px;
+        height: 24px;
+        background-repeat: no-repeat;
+
+
+    }
+
+    /* Стрелка вправо */
+    .slick-arrow.slick-next {
+        background-image: url('/img/right-arr-slider.png');
+        position: absolute;
+        right: -48px;
+        background-size: contain;
+        width: 33px;
+        height: 24px;
+        background-repeat: no-repeat;
+        outline: none;
+
+    }
+
+    /* Стрелка не активная */
+    .slick-arrow.slick-disabled {
+    }
+
+    .projects-item {
+        .project-item-img {
+            width: 100%;
+            height: 91%;
+
+        }
+
+        .projects-item-text {
+
+        }
+    }
+}

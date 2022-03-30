@@ -1,0 +1,132 @@
+#log-out {
+    color: grey !important;
+    font-size: 17px !important;
+    font-weight: bold !important;
+}
+
+.admin-header-editor {
+    padding-top: 100px;
+    display: flex;
+
+    .admin-header-nav-list {
+        padding: 40px 47px;
+        list-style: none;
+        width: 55%;
+        background-color: #a2a6aa;
+
+        .admin-header-nav-list-li {
+            padding: 20px;
+            background-color: #343a40;
+            margin-bottom: 20px;
+        }
+    }
+
+    .header-form {
+        width: 37%;
+        padding-left: 2%;
+
+        form {
+            padding: 40px 47px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.main-slider-block {
+    display: flex;
+    padding-top: 100px;
+}
+
+.admin-slider-ul {
+    padding: 0 47px;
+    list-style: none;
+    width: 55%;
+    background-color: #a2a6aa;
+}
+
+.slider-form {
+    width: 37%;
+    padding-left: 2%;
+
+    form {
+        margin-bottom: 50px;
+    }
+}
+
+.admin-sliders {
+
+    width: 400px;
+
+    .admin_slider-img {
+        width: 400px;
+    }
+}
+
+.newsPressChanger {
+    .titlechange {
+        width: 40%;
+        margin-left: 15px;
+    }
+}
+
+.smallchange {
+    margin-bottom: 100px;
+}
+
+.project-site-admin {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-item-list {
+    width: 40%;
+
+    .project-item-img {
+        width: 30%;
+    }
+}
+
+.form-project {
+    width: 40%;
+}
+
+.service_change {
+    background-color: #434544;
+    padding-top: 50px;
+    display: flex;
+
+    .services-lists {
+
+        padding: 0 47px;
+        list-style: none;
+        width: 55%;
+
+        .services-list {
+            .services_img {
+                max-width: 349px;
+            }
+        }
+    }
+}
+
+.footer-changer {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+
+    .footer-lists {
+        list-style: none;
+        width: 40%;
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            width: 35%;
+        }
+    }
+
+    .footer-forms {
+        width: 40%;
+    }
+}

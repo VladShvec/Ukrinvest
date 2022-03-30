@@ -1,0 +1,84 @@
+.services {
+    padding-top: 40px;
+    padding-bottom: 7px;
+    background-color: #e8e8e8;
+
+    .services-container {
+        max-width: 1166px;
+        margin: 0 auto;
+
+        h2 {
+            text-align: center;
+            font-size: 39px;
+            margin-bottom: 45px;
+        }
+
+        .services-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .services-item {
+                width: 47%;
+                min-height: 292px;
+                margin-bottom: 82px;
+
+                .services-bg {
+                    height: 100%;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    margin-bottom: 22px;
+                    position: relative;
+                    transition: all .2s ease-in-out;
+
+                    .services-icon {
+                        position: absolute;
+                        left: 33%;
+                        width: 28%;
+                        top: 16%;
+                        height: 53%;
+
+                    }
+
+                    .services_img {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        left: 0;
+                        top: 0;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                        transform: scale(1.1);
+                    }
+                }
+
+                .services-text {
+                    text-align: center;
+                    font-size: 26px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.3px;
+                    font-weight: 400;
+
+                }
+            }
+        }
+    }
+}
+
+//.service1{
+//    background-image: url("/img/light.jpg");
+//}
+//.service2{
+//    background-image: url("/img/sign.jpg");
+//
+//}
+//.service3{
+//    background-image: url("/img/marks.jpg");
+//
+//}
+//.service4{
+//    background-image: url("/img/equipment.jpg");
+//
+//}
